@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Mariscal</title>
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="barra">
+            <div>
+                <h1 class="titulo">Efren Mariscal <span> Bioengineer & Frontend Developer</span></h1>
+            </div>
+            
+            <div class="contenedor">
+                <button class="hamburger hamburger--elastic panel" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="nav_barra">
+        </div>
+        <div class="hero">
+            <div class="coding">
+            </div>
+        </div>
+        
+       
+
+        <div class="contenedor_Primario">
+            <div class="titulo_nombre" data-aos="fade-down">
+                <h2 class="titulo_nombre_texto">Habilidades</h2>
+            </div>
+
+            <div class="recuadro_habilidades">
+                <div data-aos="fade-right" class="recuadro_habilidades_HTML">
+                    <h3>HTML</h3>
+                    <img src="/imagenes/HTML5_logo.png" alt="" class="img_HTML">
+                </div>
+                
+                <div data-aos="fade-up" class="recuadro_habilidades_CSS">
+                    <h3>CSS</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520" class="img_CSS">
+                        <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"/>
+                        <path fill="#30a9dc" d="M226 472l149-41 35-394H226"/>
+                        <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"/>
+                        <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"/>
+                    </svg>
+                </div>
+    
+                <div data-aos="fade-left" class="recuadro_habilidades_JS">
+                    <h3>JavaScript</h3>
+                    <img src="/imagenes/js2.png" alt="" class="img_JS">
+                </div>
+                
+            </div>
+
+        </div>
+        
+        
+
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+            });
+        </script>
+
+        <script src="codigo.js"></script>
+
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+
+</body>
+
+<footer>
+    <div class="piso">
+        <h4 class="piso_texto">Ensenada  <br>Baja California</h4>
+    </div>
+</footer>
+</html>

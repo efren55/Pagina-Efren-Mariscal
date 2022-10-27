@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Mariscal</title>
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="barra">
+            <div>
+                <h1 class="titulo">Efren Mariscal <span> Bioengineer & Frontend Developer</span></h1>
+            </div>
+            
+            <div class="contenedor">
+                <button class="hamburger hamburger--elastic panel" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="nav_barra">
+        </div>
+        <div class="hero">
+            <div class="coding">
+            </div>
+        </div>
+        
+       
+
+        <div class="contenedor_Primario" data-aos="zoom-in">
+            <div class="titulo_nombre">
+                <h2 class="titulo_nombre_texto">Sobre mi</h2>
+            </div>
+
+            <div class="recuadro">
+                
+                <div class="recuadro_info">
+                    <p class="recuadro_info_sobreMi">Hola! Mi nombre es Efren Mariscal y tengo 24 años. Actualmente estoy haciendo los tramites para mi titulación como
+                        Bioingeniero. Mis estudios los realice en la Universidad Autonoma de Baja California (2017-2022). <br>
+                        Como parte del plan de estudio de mi carrera, lleve materias sobre el análisis y tratamiento de datos, en donde utilizamos 
+                        el lenguaje R. Esto me encanto y me llevo a querer saber mas acerca del mundo de la programación. Supe que era un mundo gigantesco, con muchas 
+                        variantes y todas ellas super interesantes y atractivas. Estaba motivado a seguir estudiando ciencia de datos pero ahora utilizando Python, o desarrollo
+                        BackEnd utilizando Python y Django. Tiempo después empecé a utilizar HTML por pura curiosidad y me encanto plasmar y visualizar 
+                        los cambios de manera gráfica en la pantalla de mi ordenador. Asi que me decidi por el desarrollo FrontEnd y aprender HTML, CSS y JavaScript. 
+                    </p>
+                </div>
+    
+                <div class="recuadro_imagen">
+                    <img src="/imagenes/uabc3.jpg" alt="" class="img1">
+                </div>
+                
+            </div>
+
+        </div>
+        
+        
+
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+            });
+        </script>
+
+        <script src="codigo.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </main>
+    
+</body>
+
+<footer>
+    <div class="piso">
+        <h4 class="piso_texto">Ensenada  <br>Baja California</h4>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,339 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Para que 1rem sea igual a 10px*/
+    scroll-snap-type: y mandatory; /*CAMBIO------------------*/
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: rgb(215,218,218);
+    background: linear-gradient(0deg, rgba(215,218,218,1) 0%, rgba(255,255,255,1) 100%);
+    line-height: 1.5;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    color: rgb(44,217,184);
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h4{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.titulo{
+    text-align: center;
+    color: azure;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.titulo span{
+    font-size: 2rem; 
+    color:rgb(44,217,184);
+    margin: 0;
+
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 9rem;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+@media(max-width:780px){
+    .barra{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo span{
+        margin-bottom: 1rem;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+
+.titulo_nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+
+.titulo_nombre_texto{
+    display: block;
+    text-align: center;
+    background-color: black;
+    padding: 1.5rem;
+    width: 25rem;
+    border-radius: 10px;
+}
+
+@media(min-width:780px){
+    .sitios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        /* padding-top: 1rem;
+        padding-bottom: 1rem;  */
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+        border-radius: 5px;
+        /* margin: 0 auto; */
+        
+    }
+}
+
+
+
+
+.sitios a{
+    display: block; /*Se utiliza para que los enlaces aparezcan de otro color al pasar el puntero sobre ellos*/
+    text-align: center; /*Esto va a centrar el contenido de navegacion, osea, el texto*/
+    padding: 1rem 0rem 1rem 0rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 5rem;    
+}
+
+.sitios a:hover{
+    background-color: rgb(44,217,184);
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.titulos{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+.hero{
+    background-color: black;
+    padding-bottom: 1rem;
+}
+.coding{
+    background-image: url(/imagenes/fondo2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem; /*La imagen se hace mas grande, en este caso, 45rem*/ 
+}
+
+.info{
+    background-color: black;
+}
+
+.contenedor{
+    margin-left: 4vw;
+    margin-top: 3.3vh;
+}
+
+.contenedor_Primario{
+    max-width: 120rem; /*Maximo de anchura de los elementos*/
+    margin: auto; 
+}
+
+.recuadro{
+    display: grid;
+    margin-top: 5vh;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;  
+    background-color: black;
+    border-radius: 1rem;
+    padding-bottom: 2vh;
+}
+@media(max-width:780px){
+    .recuadro{
+        display: flex;
+        flex-direction: column;
+    }
+    .sitios{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+        border-radius: 5px;
+    }
+}
+
+.recuadro_info_sobreMi{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.recuadro_info,.recuadro_imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recuadro_info{
+    padding: 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+}
+
+.recuadro_imagen{
+    padding: 1rem;
+}
+
+.img1{
+    max-width: 100%;
+}
+
+.piso{
+    background-color: black;
+    text-align: center;
+    margin-top: 25vh; 
+    padding: 0.1px 0px;
+}
+
+/*-------------------------------HABILIDADES------------------------ */
+
+
+.recuadro_habilidades{
+    display: grid;
+    margin-top: 5vh;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;  
+    background-color: black;
+    border-radius: 1rem;
+    height: 25rem;
+}
+
+.recuadro_habilidades_HTML{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_HTML{
+    display: block;
+    max-width: 10rem;
+    margin-bottom: 1vh;
+    height: 16vh;
+}
+
+
+.recuadro_habilidades_CSS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_CSS{
+    display: block;
+    max-width: 10rem;
+    height: 16vh;
+}
+
+
+
+.recuadro_habilidades_JS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_JS{
+    display: block;
+    max-width: 10rem;
+    height: 15vh;
+}
+
+
+
+/*----------------------------CONTACTO-------------------------*/
+.recuadro_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen_linkedin{
+    background-color: white;
+}
+
+.recuadro_info_link{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    display: block;
+    width: 30rem;
+    height: 13rem;
+}
+
+.recuadro_imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen_gmail{
+    background-color: white;
+}
+
+.recuadro_info_gmail{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    display: block;
+    width: 15rem;
+    height: 13rem;
+}
+
+/*---------------------PROYECTOS------------------------*/
+.recuadro_proyectos{
+    background-color: black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.imagen_proyecto{
+    display: block;
+    width: 19rem;
+    height: 15rem;
+    border-radius: 1rem;
+    margin-bottom: 2vh;
+}
+

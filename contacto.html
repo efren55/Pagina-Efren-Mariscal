@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Mariscal</title>
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="barra">
+            <div>
+                <h1 class="titulo">Efren Mariscal <span> Bioengineer & Frontend Developer</span></h1>
+            </div>
+            
+            <div class="contenedor">
+                <button class="hamburger hamburger--elastic panel" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button> 
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="nav_barra">
+        </div>
+        <div class="hero">
+            <div class="coding">
+            </div>
+        </div>
+
+        <div class="contenedor_Primario" data-aos="fade-up">
+
+            <div class="titulo_nombre">
+                <h2 class="titulo_nombre_texto">Contacto</h2>
+            </div>
+
+            <div class="recuadro">
+                
+                <div class="recuadro_info">
+                    <h3>Linkedin</h3>
+                    <div class="imagen_linkedin">
+                        <a href="https://www.linkedin.com/in/efren-mariscal-osuna-87a2aa216/">
+                            <img src="/imagenes/linkedin.jpg" alt="" class="recuadro_info_link">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="recuadro_imagen">
+                    <h3>Correo</h3>
+                    <div class = "imagen_gmail">
+                        <a href="mailto:efrenmo555@gmail.com">
+                            <img src="/imagenes/gmail.png" alt="" class="recuadro_info_gmail">
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        
+
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+            });
+        </script>
+
+        <script src="codigo.js"></script>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+<footer>
+    <div class="piso">
+        <h4 class="piso_texto">Ensenada  <br>Baja California</h4>
+    </div>
+</footer>
+
+
+</html>
